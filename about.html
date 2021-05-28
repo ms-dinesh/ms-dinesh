@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    
+    <title>about page</title>
+    
+    <style type="text/css">
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    span {
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    }
+    span:hover{
+    color: black;
+    }
+    ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    }
+    ul li a::after{
+    content: '';
+    display: inline-block;
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    margin: 2px;
+    transition: 1s;
+    }
+    ul li a:hover::after{
+    width: 100%;
+    }
+   
+    img{
+    
+    height: 40px;
+    width: 40px;
+    }
+    nav{
+    border-bottom: 1px solid gray;
+    }
+ 
+    .main{
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(/storage/emulated/0/fly-a-far/pics/bg3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    border-bottom: 0.5px solid black;
+    
+    }
+    h6{
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    text-weight: bold;
+    padding-top: 100px;
+    }
+    .jumbotron-lan{
+    margin-top: 4px;
+    }
+   /* #box {
+    padding-top: 60px;
+    padding-right: 50px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 3px;
+    box-shadow: -2px 2px 4px 0px #f44336;
+    } */
+    .fa-wpexplorer,.fa-handshake-o{
+    font-size: 100px;
+    }
+    h2{
+    color: #f44336;
+    text-align: left;
+    margin-bottom: 0px;
+    border: 10px;
+    }
+    .main{
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    padding-top: 150px;
+    }
+   
+    p{
+    letter-spacing: 0;
+    margin-left: 5px;
+    padding: 2px;
+    }
+    .social-links{
+    display: flex;
+    justify-content: space-around;
+    }    
+    
+    .social-links a{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 8px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    position: relative;
+    overflow: hidden;
+    }
+    .social-links a .fa{
+    font-size: 35px;
+    line-height: 75 inpx;
+    transition: color 0.5s;
+    z-index: 10;
+    position: relative;
+    }
+    .social-links a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    background: linear-gradient(rgba(248,0,0,0.8),rgba(248,0,0,0.8));
+    
+    position: absolute;
+    transition: 0.5s;
+    }
+    .social-links a:hover::after{
+    top: 0;
+    
+    }
+    .social-links a:hover .fa{
+    color: #fff;
+    }
+
+    .social-links{
+    display: flex;
+    justify-content: space-around;
+    }    
+    
+    .social-links a{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 8px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    position: relative;
+    overflow: hidden;
+    }
+    .social-links a .fa{
+    font-size: 35px;
+    line-height: 75px;
+    transition: color 0.5s;
+    z-index: 10;
+    position: relative;
+    }
+    .social-links a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    background: linear-gradient(rgba(248,0,0,0.8),rgba(248,0,0,0.8));
+    
+    position: absolute;
+    transition: 0.5s;
+    }
+    .social-links a:hover::after{
+    top: 0;
+    
+    }
+    .social-links a:hover .fa{
+    color: #fff;
+    }
+    .fa-map-marker{
+    font-size: 20px;
+    color: #f33446;
+    position: relative;
+    left: 0px;
+    }
+    .fa-envelope-o{
+    font-size: 20px;
+    color: #f33446;
+    position: relative;
+    left: 0px;
+    }
+    #hd{
+    font-size: 10px;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif
+    }
+    small{
+    text-align: center;
+    }
+    .fa-linkedin-square{
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size: 10px
+    }
+    .jumbotron-lan ,h5  {
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    }
+    .jumbotron-lan, small{
+    margin-bottom: 8px; 
+    padding-bottom: 5px; 
+    font-weight: bold;
+    text-size: 10rem;
+    text-align: center;
+    justify-content: center;
+    }
+    .about,h2,h4{
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    }
+    .center{
+    display: flex;
+    justify-content: center;
+    }
+    
+    .row{
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+    padding-right: 5px;
+    }
+    .col-md{
+    margin: 5px;
+    background: #fff3f3;
+    margin-bottom: 8px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: 0.5s;
+    }
+    .col-md:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+    }
+    
+    
+@media(max-width: 700px){
+    
+    .main{
+    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(/storage/emulated/0/fly-a-far/pics/bg3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 20vh;
+    width: 100%;
+    border-bottom: 0.5px solid black;
+    }
+    h6{
+    padding-top: 70px;
+    }
+
+    img{
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    margin-bottom: 2px;
+    }
+    .navbar-toggler-icon{
+    color: #fff;
+    }
+    a .navlink{
+    color: #f44336;
+    background-color: white;
+    }
+    
+    .fa-map-marker{
+    font-size: 20px;
+    position: relative;
+    left: 0px;
+    }
+    .fa-envelope-o{
+    font-size: 20px;
+    position: relative;
+    left: 0px;
+    }
+    #hd {
+    text-align: center;
+    }
+    .main{
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    padding-top: 50px;
+    }
+}
+  </style>
+  </head>
+<body class="bg-light">
+      <!--nav bar-->
+<section class="header">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+      <img src="/storage/emulated/0/fly-a-far/pics/logo.gif">
+      <span>fly-a-far</span>
+      </a>
+      <!--Hamburger icon-->
+      <button class="navbar-toggler navbar-toggler-md navbar-toggler-sm ml-auto " type="button" data-toggle="collapse" data-target="#ms" >
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="ms">
+      <!-- list items -->
+      <ul class="navbar-nav ml-auto">
+      <li class="nav-item ml-auto"> <a class="nav-link" href="flyafar.html" >Home</a> </li>
+      <li class="nav-item ml-auto"> <a class="nav-link active" href="about.html" >About Us</a> </li>
+      <li class="nav-item ml-auto"> <a class="nav-link" href="service.html" >Services</a>  </li>
+      <li class="nav-item ml-auto"> <a class="nav-link" href="book.html" >Bookings</a>  </li>
+      <li class="nav-item ml-auto"> <a class="nav-link" href="reviews.html" >Reviews</a>  </li>
+      </ul>
+      </div>    
+   </nav>
+</section>
+      <!-- caption -->
+<div class="main">
+  <h4>Around the Globe @FlyaFar</h4>  
+</div>
+     <!-- Grid model -->
+<div class="jumbotron jumbotron-main">
+   <h2> About @flyafar </h2>
+   
+   <div class="about">
+   <p>It is one of the leaders in segments, namely Escorted Group Tours, Customised Holidays, Holidays of India and Incentive Travel amongst others.
+      Across various travel segments including Leisure Travel, Incentive Travel, and Business Travel. Fly-a-Far was established in 2014. Since then, it has escorted lakhs of travelers across the globe to various destinations around the world.
+   </p>
+   </div>
+ <div class="container bg-light">
+    <div class="row">
+      <div class="col-md">
+       
+        <div class="center"><i class="fa fa-wpexplorer"></i></div>
+        <h2>Who</h2>
+        <h4>We are</h4>
+      
+      </div>
+      <div class="col-md">
+       <div class="row">
+       <p>
+       <i class="fa fa-superpowers" aria-hidden="true"></i>
+       We are one of the finest International traveling agency in the Country.
+       We offer most valuable services on demand.</p>
+        </div>
+        <div class="row">  
+          <p id="sd"><i class="fa fa-hourglass-half" aria-hidden="true"></i>
+           Far-a-Fly, was established in 2014. Head office located in Pune.
+           Branches are in Bangalore, Hyderabad , Mumbai. We are always happy to service our customers.
+           from the beginning to now we are high in sky</p>
+       </div>
+      </div>
+    </div>
+    <div class="row">
+     <div class="col-md  ">
+      
+      <div class="center"><i class="fa fa-handshake-o"></i></div>
+       <h2>What</h2>
+       <h4>We do</h4>
+      </div>
+     
+    <div class="col-md ">
+       <div class="row">
+        <p><i class="fa fa-globe" aria-hidden="true"></i>
+        Traveling-Guide: We provide a travel guide with you, its completely consumer's choice.</p>
+        </div>
+        <div class="row">
+        <p><i class="fa fa-building" aria-hidden="true"></i>
+        Accomodation: Our Agency is connected with international hotels.
+        We are always ahead to service our customers. Cost will be vary based on package.</p>
+        <p><i class="fa fa-gamepad" aria-hidden="true"></i>
+        Playtime: Specially for your kids. Surly they will n'joy through out the trip.</p>
+        </div>
+     </div>
+    </div>
+ </div>
+</div>
+
+
+    <!-- footer -->
+<section class="footer">
+    <div class="jumbotron jumbotron-lan">
+      
+      <div class="row-md">
+      <i class="fa fa-map-marker"></i>
+      <h5 id="hd">4th floor,D-14</h5> 
+      <h5 id="hd">Edge Enclave,North Main Road,Pune,201204.</h5>
+      </div>
+      <div class="row-md">
+      <i class="fa fa-envelope-o"></i>
+      <h5 id="hd">feedback@flyafar.org</h5> 
+      </div>
+     <div>
+     <br>
+      <p id="hd">Follow-on:</p>
+       <div class="social-links">
+      <a href="#" ><i class="fa fa-facebook"></i></a>
+      <a href="#" ><i class="fa fa-twitter"></i></a>
+      <a href="#" ><i class="fa fa-youtube-play"></i></a>
+      <a href="#" ><i class="fa fa-instagram"></i></a>
+       </div>
+     </div>
+     <br>
+    <p id="hd"> &copy2021 All rights Received, @flyafar</p>
+    <p id="hd">Designed by:<i class="fa fa-linkedin-square"></i>Sai Dinesh Modepalli
+    </p>
+</section>
+    
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
